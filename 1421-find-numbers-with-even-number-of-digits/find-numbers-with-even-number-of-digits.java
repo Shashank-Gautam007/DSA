@@ -26,6 +26,9 @@ class Solution {
     // }
 
     public int findNumbers(int[] nums){
+
+        // APPROACH 2
+
         // int evenCount = 0;
 
         // for(int num: nums){
@@ -38,6 +41,9 @@ class Solution {
 
         // return evenCount;
 
+
+
+        //APPROACH 3
 
 
         // int evenCount = 0;
@@ -53,6 +59,10 @@ class Solution {
         // return evenCount;
 
 
+
+
+
+        //APPROACH 4
 
         int evenCount = 0;
 
