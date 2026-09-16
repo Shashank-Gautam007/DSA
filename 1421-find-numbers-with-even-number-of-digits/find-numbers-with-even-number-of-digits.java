@@ -26,12 +26,26 @@ class Solution {
     // }
 
     public int findNumbers(int[] nums){
+        // int evenCount = 0;
+
+        // for(int num: nums){
+        //     int len = String.valueOf(num).length();
+
+        //     if(len % 2 == 0){
+        //         evenCount++;
+        //     }
+        // }
+
+        // return evenCount;
+
+
+
         int evenCount = 0;
 
         for(int num: nums){
-            int len = String.valueOf(num).length();
+            int digitCount = (int) Math.floor(Math.log10(num)) + 1;
 
-            if(len % 2 == 0){
+            if(digitCount % 2 == 0){
                 evenCount++;
             }
         }
