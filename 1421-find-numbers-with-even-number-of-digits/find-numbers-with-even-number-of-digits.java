@@ -1,28 +1,43 @@
 class Solution {
 
-    public boolean numberHasEvenDigits(int num){
-        int digitsCount = 0;
+    // public boolean numberHasEvenDigits(int num){
+    //     int digitsCount = 0;
 
-        while(num != 0){
-            num = num / 10;
-            digitsCount++;
-        }
+    //     while(num != 0){
+    //         num = num / 10;
+    //         digitsCount++;
+    //     }
 
-        return digitsCount % 2 == 0;
-    }
+    //     return digitsCount % 2 == 0;
+    // }
 
-    public int findNumbers(int[] nums) {
-        // APPROACH 1
+    // public int findNumbers(int[] nums) {
+    //     // APPROACH 1
 
+    //     int evenCount = 0;
+
+    //     for(int i = 0; i<nums.length; i++){
+    //         if(numberHasEvenDigits(nums[i])){
+    //             evenCount++;
+    //         }
+    //     }
+
+    //     return evenCount;
+    // }
+
+    public int findNumbers(int[] nums){
         int evenCount = 0;
 
-        for(int i = 0; i<nums.length; i++){
-            if(numberHasEvenDigits(nums[i])){
+        for(int num: nums){
+            int len = String.valueOf(num).length();
+
+            if(len % 2 == 0){
                 evenCount++;
             }
         }
 
         return evenCount;
     }
+    
 
 }
